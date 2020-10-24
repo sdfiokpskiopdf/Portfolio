@@ -1,0 +1,132 @@
+/*css resets*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*custom styling*/
+
+html{
+	margin-left: 75px;
+}
+
+body{
+  background-color: #1d1d1d;
+	font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.parent_nav{
+	display: table;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 75px;
+	height: 100%;
+	background: #181818;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+.child_nav{
+	display: table-cell;
+  vertical-align: middle;
+}
+
+.menu{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu__item{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 0;
+	text-decoration: none;
+	color: #a5a5a5;
+	transition: color 0.3s;
+}
+
+.menu__item > i{
+	font-size: 2.2em;
+}
+
+.menu__item--active{
+	color: #08fdd8;
+}
+
+.menu__item:hover{
+	color: #08fdd8;
+}
+
+.menu__item::after{
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 100%;
+	content: attr(data-tooltip);
+	margin-left: 15px;
+	white-space: nowrap;
+	padding: 7px 12px;
+	font-size: 0.9em;
+	font-weight: bold;
+	background: rgba(165, 165, 165, 0.8);
+	border-radius: 15px;
+	color: #1d1d1d;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s;
+	transition: background 0.5s;
+}
+
+.menu__item:hover::after{
+	background: rgba(8, 253, 216, 0.8);
+	opacity: 1;
+	visibility: visible;
+}

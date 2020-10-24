@@ -1,1 +1,32 @@
-<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %} {% endblock %}</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css')}}">
+</head>
+<body>
+  <div class="parent_nav">
+    <div class="child_nav">
+      <nav class="menu">
+        <a href="{{ url_for('home') }}" class="{{'menu__item menu__item--active' if active_page == 'home' else 'menu__item'}}" data-tooltip="Home">
+          <i class="material-icons">home</i>
+        </a>
+        <a href="{{ url_for('about') }}" class="{{'menu__item menu__item--active' if active_page == 'about' else 'menu__item'}}" data-tooltip="About">
+          <i class="material-icons">account_box</i>
+        </a>
+        <a href="{{ url_for('skills') }}" class="{{'menu__item menu__item--active' if active_page == 'skills' else 'menu__item'}}" data-tooltip="Skills">
+          <i class="material-icons">settings</i>
+        </a>
+        <a href="{{ url_for('projects') }}" class="{{'menu__item menu__item--active' if active_page == 'projects' else 'menu__item'}}" data-tooltip="Projects">
+          <i class="material-icons">work</i>
+        </a>
+        <a href="{{ url_for('contact') }}" class="{{'menu__item menu__item--active' if active_page == 'contact' else 'menu__item'}}" data-tooltip="Contact">
+          <i class="material-icons">email</i>
+        </a>
+      </nav>
+    </div>
+  </div>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
