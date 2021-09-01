@@ -20,6 +20,12 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -27,6 +33,14 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+}
+
+.preload * {
+	-webkit-transition: none; 
+	-moz-transition: none; 
+	-ms-transition: none; 
+	-o-transition: none; 
+	transition: none;
 }
 
 ol, ul {
@@ -54,7 +68,7 @@ html{
 }
 
 body{
-  background-color: #1d1d1d;
+  	background-color: #1d1d1d;
 	font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -81,7 +95,7 @@ body{
 	padding: 0 15px;
 	text-decoration: none;
 	color: #a5a5a5;
-	transition: color 0.3s;
+	transition: color 0.3s !important;
 }
 .menu__item > i{
 	font-size: 2.2em;
@@ -131,7 +145,7 @@ body{
 		padding: 15px 0;
 		text-decoration: none;
 		color: #a5a5a5;
-		transition: color 0.3s;
+		transition: color 0.3s !important;
 	}
 
 	.menu__item > i{
@@ -163,8 +177,8 @@ body{
 		color: #1d1d1d;
 		opacity: 0;
 		visibility: hidden;
-		transition: opacity 0.3s;
-		transition: background 0.3s;
+		transition: opacity 0.3s !important;
+		transition: background 0.3s !important;
 	}
 
 	.menu__item:hover::after{

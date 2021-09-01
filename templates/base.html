@@ -1,34 +1,42 @@
 <html>
 <head>
-  <title>{% block title %} {% endblock %}</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css')}}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %} {% endblock %}</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css')}}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	{% block head %} {% endblock %}
 </head>
-<body>
+<body class="preload">
   <div class="parent_nav">
-    <div class="child_nav">
-      <nav class="menu">
-        <a href="{{ url_for('home') }}" class="{{'menu__item menu__item--active' if active_page == 'home' else 'menu__item'}}" data-tooltip="Home">
-          <i class="material-icons">home</i>
-        </a>
-        <a href="{{ url_for('about') }}" class="{{'menu__item menu__item--active' if active_page == 'about' else 'menu__item'}}" data-tooltip="About">
-          <i class="material-icons">account_box</i>
-        </a>
-        <a href="{{ url_for('skills') }}" class="{{'menu__item menu__item--active' if active_page == 'skills' else 'menu__item'}}" data-tooltip="Skills">
-          <i class="material-icons">settings</i>
-        </a>
-        <a href="{{ url_for('projects') }}" class="{{'menu__item menu__item--active' if active_page == 'projects' else 'menu__item'}}" data-tooltip="Projects">
-          <i class="material-icons">work</i>
-        </a>
-        <a href="{{ url_for('contact') }}" class="{{'menu__item menu__item--active' if active_page == 'contact' else 'menu__item'}}" data-tooltip="Contact">
-          <i class="material-icons">email</i>
-        </a>
-      </nav>
-    </div>
+	<div class="child_nav">
+	  <nav class="menu">
+		<a href="{{ url_for('home') }}" class="{{'menu__item menu__item--active' if active_page == 'home' else 'menu__item'}}" data-tooltip="Home">
+		  <i class="material-icons">home</i>
+		</a>
+		<a href="{{ url_for('about') }}" class="{{'menu__item menu__item--active' if active_page == 'about' else 'menu__item'}}" data-tooltip="About">
+		  <i class="material-icons">account_box</i>
+		</a>
+		<a href="{{ url_for('skills') }}" class="{{'menu__item menu__item--active' if active_page == 'skills' else 'menu__item'}}" data-tooltip="Skills">
+		  <i class="material-icons">settings</i>
+		</a>
+		<a href="{{ url_for('projects') }}" class="{{'menu__item menu__item--active' if active_page == 'projects' else 'menu__item'}}" data-tooltip="Projects">
+		  <i class="material-icons">work</i>
+		</a>
+		<a href="{{ url_for('contact') }}" class="{{'menu__item menu__item--active' if active_page == 'contact' else 'menu__item'}}" data-tooltip="Contact">
+		  <i class="material-icons">email</i>
+		</a>
+	  </nav>
+	</div>
   </div>
   {% block content %}
   {% endblock %}
+  <script>
+	$(window).load(function() {
+	  $("body").removeClass("preload");
+	});
+  </script>    
 </body>
 </html>

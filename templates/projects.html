@@ -1,9 +1,100 @@
 {% extends 'base.html'%}
 {% set active_page = "projects" %}
 {% block title %}
-  My Projects
+My Projects
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/projects.css') }}" />
 {% endblock %}
 
 {% block content %}
-
+	<main>
+		<section class="cards">
+			<div class="card">
+				<div class="card__image-container">
+					<img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" />
+				</div>
+				<div class="card__content">
+					<p class="card__title text--medium">
+						Password Manager
+					</p>
+					<div class="card__info">
+						<p class="text--medium">A simple, secure and local password manager built in python.</p>
+						<p class="card__type text--medium">Python</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__image-container">
+					<img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" />
+				</div>
+				<div class="card__content">
+					<p class="card__title text--medium">
+						Download Manager
+					</p>
+					<div class="card__info">
+						<p class="text--medium">A simple multi-threaded python download manager.</p>
+						<p class="card__type text--medium">Python</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__image-container">
+					<img src="https://images.unsplash.com/photo-1541877944-ac82a091518a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" />
+				</div>
+				<div class="card__content">
+					<p class="card__title text--medium">
+						Youtube Comment Finder
+					</p>
+					<div class="card__info">
+						<p class="text--medium">A Flask web app to search a YouTube video for specific comments using a variety of filters.</p>
+						<p class="card__type text--medium">HTML</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__image-container">
+					<img src="https://images.unsplash.com/photo-1530712024539-ecd73dfb1c9d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" />
+				</div>
+				<div class="card__content">
+					<p class="card__title text--medium">
+						Youtube Video Downloader
+					</p>
+					<div class="card__info">
+						<p class="text--medium">A Flask web app to download YouTube videos in various resolutions, framerates and bitrates.</p>
+						<p class="card__type text--medium">HTML</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__image-container">
+					<img src="https://images.unsplash.com/photo-1545665277-5937489579f2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" />
+				</div>
+				<div class="card__content">
+					<p class="card__title text--medium">
+						Porfolio
+					</p>
+					<div class="card__info">
+						<p class="text--medium">My portfolio website, built on flask.</p>
+						<p class="card__type text--medium">CSS</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__image-container">
+					<img src="https://images.unsplash.com/photo-1614680376739-414d95ff43df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" />
+				</div>
+				<div class="card__content">
+					<p class="card__title text--medium">
+						Discord Auto Reply
+					</p>
+					<div class="card__info">
+						<p class="text--medium">An app that allows you to auto reply to discord DMs and server pings when you're not active.</p>
+						<p class="card__type text--medium">Python</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 {% endblock %}
