@@ -2,7 +2,7 @@ main {
     display: grid;
     grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
     grid-gap: 40px;
-    padding: 20px 0;
+    padding: 75px 0;
 }
 
 .text--medium {
@@ -82,6 +82,12 @@ main {
         grid-column-end: span 6;
     }
 } 
+
+@media only screen and (max-width: 960px) {
+    main {
+        padding: 20px 0;
+    }
+}
 
 @media only screen and (max-width: 700px) {
     main {
