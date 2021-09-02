@@ -1,9 +1,17 @@
 {% extends 'base.html'%}
 {% set active_page = "home" %}
 {% block title %}
-  Home Page
+	Home Page
+{% endblock %}
+
+{% block head %} 
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}" />
 {% endblock %}
 
 {% block content %}
-
+	<main>
+		<h1 class="fadein">Hi, I'm Pot Noodle</h1>
+		<h2 id="second" class="fadein">A Full-Stack Developer</h2>
+		<a href="{{ url_for('projects') }}"><h3 id="third" class="fadein">>>> See my projects</h3></a>
+	</main>
 {% endblock %}

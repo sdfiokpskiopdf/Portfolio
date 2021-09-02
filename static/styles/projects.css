@@ -60,6 +60,7 @@ main {
 
 .card__title {
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .card__info {
