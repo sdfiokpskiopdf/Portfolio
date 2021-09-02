@@ -25,8 +25,7 @@ def skills():
 def projects():
     with open("projects.json") as json_file:
         projects = json.load(json_file)
-    
-    print(projects) 
+
     return render_template("projects.html", projects=projects)
 
 
