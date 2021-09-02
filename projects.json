@@ -1,0 +1,44 @@
+[
+	{
+		"title" : "Password Manager",
+		"desc" : "A simple, secure and local password manager built in python.",
+		"lang" : "Python",
+		"image" : "https://images.unsplash.com/photo-1582139329536-e7284fece509?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+		"url" : "https://github.com/pot-noodle-python/password-manager"
+	},
+	{
+		"title" : "Download Manager",
+		"desc" : "A simple multi-threaded python download manager.",
+		"lang" : "Python",
+		"image" : "ttps://images.unsplash.com/photo-1587614382346-4ec70e388b28?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+		"url" : "https://github.com/pot-noodle-python/download-manager"	
+	},
+	{
+		"title" : "Youtube Comment Finder",
+		"desc" : "A Flask web app to search a YouTube video for specific comments using a variety of filters.",
+		"lang" : "HTML",
+		"image" : "https://images.unsplash.com/photo-1541877944-ac82a091518a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+		"url" : "https://github.com/pot-noodle-python/youtube-comment-finder"	
+	},
+	{
+		"title" : "Youtube Video Downloader",
+		"desc" : "A Flask web app to download YouTube videos in various resolutions, framerates and bitrates.",
+		"lang" : "HTML",
+		"image" : "https://images.unsplash.com/photo-1530712024539-ecd73dfb1c9d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+		"url" : "https://github.com/pot-noodle-python/youtube-video-downloader"
+	},
+	{
+		"title" : "Ban Appeal Discord Bot",
+		"desc" : "A ticket based discord bot to manage ban appeals.",
+		"lang" : "Python",
+		"image" : "https://images.unsplash.com/photo-1536972795217-00f0b4587844?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80",
+		"url" : "https://github.com/pot-noodle-python/ban-appeal-bot"
+	},
+	{
+		"title" : "Portfolio",
+		"desc" : "My portfolio website, built on flask.",
+		"lang" : "CSS",
+		"image" : "https://images.unsplash.com/photo-1545665277-5937489579f2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+		"url" : "https://github.com/pot-noodle-python/Portfolio"
+	}
+]

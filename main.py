@@ -1,4 +1,5 @@
 from flask import Flask, render_template, url_for
+import json
 import os
 
 app = Flask(__name__)
@@ -22,7 +23,11 @@ def skills():
 
 @app.route("/projects")
 def projects():
-    return render_template("projects.html")
+    with open("projects.json") as json_file:
+        projects = json.load(json_file)
+    
+    print(projects) 
+    return render_template("projects.html", projects=projects)
 
 
 @app.route("/contact")
