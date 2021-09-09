@@ -1,0 +1,71 @@
+main {
+    color: #ecf0f1;
+	position: relative;
+	top: 2%;
+}
+
+h1 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 8em;
+   	font-weight: 900;
+}
+
+.skills_container {
+	margin-top: 6em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 6em;
+}
+
+.item {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 2em;
+}
+
+.item p {
+	font-family: "Ubuntu Mono", sans-serif;
+	font-size: 3em;
+}
+
+.container {
+	width: 75%;
+	background-color: #39393b;
+}
+
+.skills {
+	background-color: #08fdd8;
+	padding: 2em;
+	cursor: pointer;
+	transition: background-color 0.3s !important;
+}
+
+.active, .skills:hover {
+	background-color: rgba(8, 253, 216, 0.4);
+}
+
+.content {
+	padding: 2em;
+	display: none;
+	overflow: hidden;
+	font-size: 0.8em;
+}
+
+.python {
+	width: 90%;
+}
+
+.html {
+	width: 80%;
+}
+
+.css {
+	width: 65%;
+}
+
+.js {
+	width: 60%;
+}

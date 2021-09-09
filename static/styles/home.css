@@ -20,6 +20,7 @@ h2 {
 
 h3 {
     font-family: "Ubuntu Mono", sans-serif;
+	color: #08fdd8;
     font-size: 3em;
     margin-top: 3%;
 	transition: all 0.3s ease 0s !important;

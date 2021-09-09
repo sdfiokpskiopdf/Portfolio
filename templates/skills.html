@@ -4,6 +4,79 @@
   My Skills
 {% endblock %}
 
-{% block content %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/skills.css') }}" />
+{% endblock %}
 
+{% block content %}
+	<main>
+		<center><h1>My Skills</h1></center>
+		
+		<div class="skills_container">
+			<div class="item">
+				<p>Python</p>
+				<div class="container">
+					<button class="skills python collapsible"></button>
+					<div class="content">
+						<p>Some collapsible content. 
+							Click the button to toggle between showing and hiding the collapsible content. 
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, 
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="item">
+				<p>HTML</p>
+				<div class="container">
+					<button class="skills html collapsible"></button>
+					<div class="content">
+						<p>Some collapsible content. 
+							Click the button to toggle between showing and hiding the collapsible content. 
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, 
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="item">
+				<p>CSS</p>
+				<div class="container">
+					<button class="skills css collapsible"></button>
+					<div class="content">
+						<p>Some collapsible content. 
+							Click the button to toggle between showing and hiding the collapsible content. 
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, 
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="item">
+				<p>JavaScript</p>
+				<div class="container">
+					<button class="skills js collapsible"></button>
+					<div class="content">
+						<p>Some collapsible content. 
+							Click the button to toggle between showing and hiding the collapsible content. 
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, 
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/collapsible.js') }}"></script>
 {% endblock %}

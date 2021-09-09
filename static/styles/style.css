@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, button, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -81,6 +81,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 9999;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -89,6 +90,7 @@ body{
 	font-size: 16px;
 	font-family: sans-serif;
 }
+
 .child_nav{
 	all: initial;
 	all: unset;
@@ -117,7 +119,7 @@ body{
 /*resopnsive stuff*/
 
 @media only screen and (min-width: 1450px) {
-	.menu__item:hover::after{
+	.menu__item:hover::after {
 		background: rgba(8, 253, 216, 0.8);
 		opacity: 1;
 		visibility: visible;
@@ -133,6 +135,7 @@ body{
 	.parent_nav{
 		display: table;
 		position: fixed;
+		z-index: 9999;
 		left: 0;
 		top: 0;
 		width: 75px;
@@ -143,8 +146,9 @@ body{
 	}
 
 	.child_nav{
+
 		display: table-cell;
-	  vertical-align: middle;
+	  	vertical-align: middle;
 	}
 
 	.menu{
