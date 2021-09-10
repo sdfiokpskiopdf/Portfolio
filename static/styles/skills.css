@@ -52,6 +52,34 @@ h1 {
 	display: none;
 	overflow: hidden;
 	font-size: 0.8em;
+	column-gap: 7em;
+	width: 100%;
+}
+
+.inner_skills_container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	row-gap: 4em; 
+	margin-top: 2em;
+}
+
+.inner_skill_container {
+	background-color: #a5a5a5;
+	width: 100%;
+}
+
+.text {
+	flex: 1;
+}
+
+.inner {
+	padding: 1em;
+}
+
+.inner:hover {
+	background-color: #08fdd8;
+	cursor: inherit;
 }
 
 .python {
