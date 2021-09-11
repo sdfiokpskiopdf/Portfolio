@@ -61,7 +61,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	row-gap: 4em; 
-	margin-top: 2em;
+	font-size: 0.7em;
 }
 
 .inner_skill_container {
@@ -97,3 +97,38 @@ h1 {
 .js {
 	width: 60%;
 }
+
+.flask {
+	width: 99%;
+}
+
+.discord {
+	width: 95%;
+}
+
+.thread {
+	width: 80%;
+}
+
+.tkinter {
+	width: 75%;
+}
+
+.requests {
+	width: 90%;
+}
+
+.click {
+	width: 70%;
+}
+
+.argparse {
+	width: 65%;
+}
+
+.cryptography {
+	width: 60%;
+}
+
+
+
